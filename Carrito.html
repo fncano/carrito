@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PANADERIA Y REPOSTERIA</title>
+  <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="scrip.js" type="text/javascript"></script>
+
+</head>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Panaderia Olimpo</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">sitios</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<body>
+<div class="row">
+<div class="col-sm-8">
+	<table class="table" border="1">
+  <thead>
+    <tr >
+      <th></th>
+      <th>Nombre</th>
+      <th>Valor</th>
+      <th>Opciones</th>
+    </tr>
+  </thead>
+  <tbody id= "rolo">
+    <tr>
+      <td><img src="buñuelo.jpg" height="50" width="100"></td>
+      <td class="art">Buñuelo</td>
+      <td class="prec">500</td>
+      <td><button type="button" class="btn btn-outline-primary menos">«</button>
+      <input type="text" style ="width: 40px; height: 37px;"  class="cant" value="1">
+	<button type="button" class="btn btn-outline-primary mas">»</button>
+	<td><a href="#" class="btn btn-primary btn-lg active producto">Añadir</a></td>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="cruasan.jpg" height="50" width="100"></td>
+      <td class="art">Croasan</td>
+      <td class="prec">800</td>
+      <td><button type="button" class="btn btn-outline-primary menos">«</button>
+      <input type="text" style ="width: 40px; height: 37px;" class="cant" value="1">
+	<button type="button" class="btn btn-outline-primary mas">»</button>
+	<td><a href="#" class="btn btn-primary btn-lg active producto">Añadir</a></td>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src="panq.jpg" height="50" width="100"></td>
+      <td class="art">Pan de queso</td>
+      <td class="prec">500</td>
+      <td><button type="button" class="btn btn-outline-primary menos">«</button>
+      <input type="text" style ="width: 40px; height: 37px;" class="cant"  value="1">
+	<button type="button" class="btn btn-outline-primary mas">»</button>
+	<td><a href="#" class="btn btn-primary btn-lg active producto">Añadir</a></td>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="pandebono.jpg" height="50" width="100"></td>
+      <td class="art">Pan de bono</td>
+      <td class="prec">800</td>
+      <td><button type="button" class="btn btn-outline-primary menos">«</button>
+      <input type="text" style ="width: 40px; height: 37px;" class="cant" value="1">
+	<button type="button" class="btn btn-outline-primary mas">»</button>
+	<td><a href="#" class="btn btn-primary btn-lg active producto">Añadir</a></td>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="rollo" height="50" width="100"></td>
+      <td class="art">Rollo</td>
+      <td class="prec">300</td>
+      <td><button type="button" class="btn btn-outline-primary menos">«</button>
+      <input type="text" style ="width: 40px; height: 37px;" class="cant" value="1">
+	<button type="button" class="btn btn-outline-primary mas">»</button>
+	<td><a href="#" class="btn btn-primary btn-lg active producto">Añadir</a></td>
+      </td>
+    </tr>
+
+  </tbody>
+<tfoot>
+  <tr>
+  <td colspan="8" class="text-right paginations-buttons">
+  <button class="btn btn-info">1</button>
+  <button class="btn btn-info">2</button>
+  <button class="btn btn-info">3</button>
+  </td>
+
+  </tr>
+</tfoot>
+
+
+
+</table>
+</div>
+
+<div class="col-sm-4">
+<table class="table" border="1">
+  <thead><img src="carrito.jpg" height="80" width="90"></th>
+    <tr>
+      
+      <th>Agrega Tu Compra</th>
+      <th>precio</th>
+      <th>cantidad</th>
+      <th>Total</th>
+      
+    </tr>
+  </thead>
+  <tbody id="contenedorproductos"> 
+
+  </tbody>
+  <tfoot>
+  	<tr>
+  		<td>total:</td>
+  		<td class="total" colspan="3">0</td>
+  	</tr>
+  	
+  </tfoot>
+
+</table>
+</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
